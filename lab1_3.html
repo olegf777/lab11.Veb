@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Лінійні алгоритми</title>
+</head>
+<body>
+<script>
+"use strict";
+let n = parseInt(prompt("Введіть кількість кутів n", ""));
+let r = parseInt(prompt("Введіть радіус r", ""));
+let S = (n * Math.pow(r, 2) * Math.sin(2 * Math.PI / n)) 
+/2;
+let P = 2 * n * r * Math.sin(Math.PI / n);
+alert("Площа многокутника =" + S.toFixed(2));
+alert("Периметр правильного n-кутника =" + P.toFixed(2));
+history.back();
+</script>
+</body>
+</html>
